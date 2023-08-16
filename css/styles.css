@@ -1,16 +1,19 @@
 body {
-    font-family: Roboto; 
+    font-family: Roboto; sans-serif;
     background-color: #fff;
+    color: #434455;
 }
 
 ul { list-style: none; }
 
 .logo-title,
 .footer-logo  {
-    font-family: Raleway;
+    font-family: Raleway; sans-serif;
     color: #2E2F42;
+    font-weight: 700;
     font-size: 18px;
-    line-height: 1.67;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
     font-style: normal;
     text-transform: uppercase;
 }
@@ -25,6 +28,14 @@ font-weight: 500;
 line-height: 1.5; 
 letter-spacing: 0.32px;
     }
+    .nav-menu :focus,
+    .nav-menu :hover {
+        color: #404bbf;
+    }
+
+    .adress-text {
+        font-style: normal;
+    }
 .adress-menu {
     color: #434455;
     font-size: 16px;
@@ -32,11 +43,16 @@ font-style: normal;
 font-weight: 400;
 line-height: 1.5; 
 letter-spacing: 0.32px;
+
 }
+.adress-menu :hover,
+.adress-menu :focus
+{
+    color: #404bbf;
+} 
+ 
 .hero-section {
     background-color: #2E2F42;
-    width="1400";
-height="600";
 }  
 .hero-text {
     color:  #FFF;
@@ -50,17 +66,19 @@ letter-spacing: 1.12px;
    .hero-button {
     color: #FFF;
     background: #4D5AE5;
-box-shadow: 0px 4px 4px 0px; 
-border-radius: 4px;
 font-size: 16px;
 font-style: normal;
 font-weight: 500;
 line-height: 1.5; 
 letter-spacing: 0.64px;  
-
-width="1440";
-height="600";
+cursor: pointer;
 }
+.hero-button: hover {
+    background-color: #404BBF;}
+ .hero-button: focus {
+        background-color: #404BBF;
+
+} 
 
 .section-title {
 color: #2E2F42;
@@ -93,6 +111,9 @@ line-height: 1.11;
 letter-spacing: 0.72px;
 text-transform: capitalize;
 }
+.portfolio-item {
+    background-color: #FFFFFF;
+}
 .team-name,
 .portfolio-name {
     color: #2E2F42;
@@ -122,4 +143,7 @@ font-style: normal;
 font-weight: 400;
 line-height: 1.5; 
 letter-spacing: 0.32px;
+}
+.footer-logo {
+    color: #F4F4FD;
 }
